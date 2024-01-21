@@ -7,7 +7,8 @@ y_values = [x**2 for x in x_values]  # using list comprehension to calculate squ
 
 plt.style.use('dark_background')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, c='g', s=100)
+# ax.scatter(x_values, y_values, c='g', s=10)
+ax.scatter(x_values, y_values, c=y_values, cmap='viridis', s=10)
 ax.set_title('Squares', fontsize=24)
 ax.set_xlabel('Value', fontsize=14)
 ax.set_ylabel('Square of Value', fontsize=14)
